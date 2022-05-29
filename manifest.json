@@ -1,0 +1,15 @@
+{
+  "name": "unified color of contributions",
+  "description": "Unify the colors of the contributions on GitHub",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["script.js"]
+    }
+  ]
+}
